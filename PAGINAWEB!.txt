@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director de Cine y Teatro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        .minimalist-border {
+            border: 2px solid #000000;
+            padding: 1em;
+            margin: 1em 0;
+        }
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+        .project {
+            border: 1px solid #000000;
+            padding: 1em;
+            width: calc(33% - 2em);
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .project {
+                width: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                width: calc(100% - 2em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Director de Cine y Teatro</h1>
+        <nav>
+            <a href="#about">Sobre Mí</a>
+            <a href="#works">Trabajos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="about" class="minimalist-border">
+        <h2>Sobre Mí</h2>
+        <p>Soy un director apasionado por el cine experimental, con experiencia tanto en cine como en teatro. Mi trabajo se centra en explorar nuevas formas de narrativa y estética visual.</p>
+    </section>
+
+    <section id="works" class="minimalist-border">
+        <h2>Trabajos</h2>
+        <div class="project-gallery">
+            <!-- Ejemplo de proyecto 1 -->
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Ejemplo de proyecto 2 -->
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Añadir más proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <section id="contact" class="minimalist-border">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de:</p>
+        <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+        <p>Teléfono: +123 456 7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Director de Cine y Teatro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
